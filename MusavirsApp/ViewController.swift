@@ -12,17 +12,17 @@ class ViewController: UIViewController {
     
     var numberOnScreen:Double = 0;
 
-    
+
 
  @IBOutlet weak var labels: UILabel!
    
     @IBAction func numbers(_ sender: UIButton) //numbers buttons
     {
-     
-        labels.text = labels.text! + String(sender.tag-1) //
         
+        labels.text = labels.text! + String(sender.tag-1) //
+
         numberOnScreen = Double(labels.text!)! //the answer will be decimal
-     }
+    }
     
     
   @IBAction func button(_ sender: UIButton) // UI Buttons
